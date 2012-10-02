@@ -1,9 +1,58 @@
 {
-	"brace_style": "collapse",
+	//expand:
+	//function()\n{}
+	"brace_style": "expand",
+
+	//create spaces before 'function' or 'typeof'
+	//
+	//false:	function(), typeof()
+	//true:		function (), typeof ()
 	"jslint_happy": false,
+
+
+	//original:
+	//	'[\n\t1,\n\t2,\n\t3\n]'
+	//
+	//true:
+	//	'[\n    1,\n    2,\n    3\n    ]'
+	//
+	//false:
+	//	'[\n1, 2, 3]'
 	"keep_array_indentation": false,
+
+	//description:
+	//	max ammount for newlines (0 means infinite)
+	//
+	//original:
+	//	'var a;\n\n\nvarb'
+	//
+	//1:
+	//	'var a;\nvarb;'
+	//
+	//2:
+	//	'var a;\n\nvarb;'
+	//
+	//4:
+	//	'var a;\n\n\nvarb;'
 	"max_preserve_newlines": 4,
+
+
+	//same like 'max_preserve_newlines = 1'
+	//if true, overrides max_preserve_newlines
 	"preserve_newlines": true,
+
+	//description:
+	//	if function declaration is like 'var a = function()'
+	//	puts indentation in the line below
+	//
+	//original:
+	//	'var a = function b(){\n\n}'
+	//
+	//true:
+	//	'var a = function b(){\n\n}'
+	//
+	//false:
+	//	'var a = function b(){\n\n\t}'
 	"keep_function_indentation": false,
 	"indent_with_tabs": false,
 	"ensure_newline_at_eof_on_save": false,
